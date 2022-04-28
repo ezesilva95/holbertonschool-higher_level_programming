@@ -4,12 +4,12 @@ if __name__ == "__main__":
     usr = argv[1:]
     size = len(usr)
     if size != 1:
-        print(f"{size} argunment", end="")
+        print(f"{size} argunments", end="")
         if size == 0:
             print(".")
         else:
             print(":")
     else:
-        print(f"{size} arguments")
+        print(f"{size} argument:")
     for idx, arg in enumerate(usr):
         print(f"{idx + 1}: {arg}")
