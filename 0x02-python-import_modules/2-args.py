@@ -4,7 +4,7 @@ if __name__ == "__main__":
     usr = argv[1:]
     size = len(usr)
     if size != 1:
-        print(f"{size} argunments", end="")
+        print(f"{size} arguments", end="")
         if size == 0:
             print(".")
         else:
