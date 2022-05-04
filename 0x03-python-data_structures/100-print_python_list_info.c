@@ -1,7 +1,4 @@
 #include <Python.h>
-#include <listobject.h>
-#include <object.h>
-#include <stdio.h>
 
 void print_python_list_info(PyObject *p)
 {
@@ -18,4 +15,3 @@ void print_python_list_info(PyObject *p)
 		       (PY_TYPE(PyList_GetItem(p, idx)))->tp_name);
 	}
 }
-
