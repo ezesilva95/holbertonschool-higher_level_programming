@@ -5,3 +5,4 @@ def common_elements(set_1, set_2):
 
     if set1 and set2:
         return set1 & set2
+    return ()
