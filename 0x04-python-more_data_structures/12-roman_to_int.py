@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
+    numr = 0
     if roman_string is None and type(roman_string) is not str:
         return (0)
     else:
-        num = 0
         for i in range(len(roman_string)):
             roman_string += "-"
             next_i = roman_string[i + 1]
