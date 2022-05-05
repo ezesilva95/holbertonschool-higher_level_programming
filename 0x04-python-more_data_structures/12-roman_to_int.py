@@ -17,15 +17,21 @@ def roman_to_int(roman_string):
             if c == 'V':
                 num += 5
             if c == 'X':
-                if next_i == 'L' or next_i == 'C':
-                    num -= 10
+                if next_i < len(roman_string):
+                    if next_i == 'L' or next_i == 'C':
+                        num -= 10
+                    else:
+                        num += 10
                 else:
                     num += 10
             if c == 'L':
                 num += 50
             if c == 'C':
-                if next_i == 'D' or next_i == 'M':
-                    num -= 100
+                if next_i < len(roman_string):
+                    if next_i == 'D' or next_i == 'M':
+                        num -= 100
+                    else:
+                        num += 100
                 else:
                     num += 100
             if c == 'D':
@@ -35,6 +41,4 @@ def roman_to_int(roman_string):
                     num += 500
             if c == 'M':
                 num += 1000
-            roman_string = roman_string[:-1]
-        return num
-    return()
+    return num
