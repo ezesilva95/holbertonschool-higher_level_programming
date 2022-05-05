@@ -21,7 +21,10 @@ def roman_to_int(roman_string):
         if roman_string[i] == 'L':
             num += 50
         if roman_string[i] == 'C':
-            num += 100
+            if next_i == 'D' or next_i == 'M':
+                num -= 100
+            else:
+                num += 100
         if roman_string[i] == 'D':
             if next_i == 'M':
                 num -= 500
