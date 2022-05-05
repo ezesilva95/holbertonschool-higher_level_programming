@@ -5,7 +5,7 @@ def roman_to_int(roman_string):
     else:
         num = 0
         for i, c in enumerate(roman_string):
-            next_i = i+ 1
+            next_i = i + 1
             if c == 'I':
                 if next_i < len(roman_string):
                     if next_i == 'V' or next_i == 'X':
