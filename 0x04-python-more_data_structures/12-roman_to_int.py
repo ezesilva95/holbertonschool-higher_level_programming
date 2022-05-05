@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
-    if roman_string is None and type(roman_string) is not str:
-        return (0)
-    else:
+    if roman_string is not None and type(roman_string) is str:
         num = 0
         for i, c in enumerate(roman_string):
             next_i = i + 1
