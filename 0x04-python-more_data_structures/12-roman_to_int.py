@@ -36,4 +36,6 @@ def roman_to_int(roman_string):
                 num += 500
             if c == 'M':
                 num += 1000
-    return num
+        return num
+    else:
+        return (0)
