@@ -13,8 +13,8 @@ class Square:
         init square
 
         The size of a square is crucial for a square.
-        One way to have the control is to keep it privately. 
-        You will see in next tasks how to get, 
+        One way to have the control is to keep it privately.
+        You will see in next tasks how to get,
         update and validate the size value.
         '''
         self.__size = size
