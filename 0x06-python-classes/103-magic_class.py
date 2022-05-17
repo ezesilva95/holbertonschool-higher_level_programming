@@ -2,6 +2,7 @@
 '''def magicClass'''
 import math
 
+
 class MagicClass:
     '''init and define methods'''
     def __init__(self, radius=0):
