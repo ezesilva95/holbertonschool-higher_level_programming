@@ -1,4 +1,4 @@
-#!/bin/usr/python
+#!/bin/usr/python3
 '''
 empty class square that defines a square
 '''
