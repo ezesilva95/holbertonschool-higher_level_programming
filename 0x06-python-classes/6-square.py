@@ -77,7 +77,11 @@ class Square:
         if self.__size == 0:
             print("")
         else:
-            print("\n" * self.__position[1], end="")
-            print("\n".join([" " * self.__position[0] +
-                             "#" * self.__size
-                             for rows in range(self.__size)]))
+           for line in range(self.__position[1]):
+            print()
+        for i in range(self.__size):
+            for space in range(self.__position[0]):
+                print(" ", end="")
+            for j in range(self.__size):
+                print('#', end="")
+            print() 
