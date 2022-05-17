@@ -9,18 +9,17 @@ class Square:
     class square
     '''
 
-
     def __init__(self, size=0, position=(0, 0)):
         '''
         Init a square
-        
+
         The size of a square is crucial for a square.
         One way to have the control is to keep it privately.
         You will see in next tasks how to get,
         update and validate the size value.
         '''
-        self.size = size
-        self.position = position
+        self.__size = size
+        self.__position = position
 
     @property
     def size(self):
@@ -72,6 +71,9 @@ class Square:
         return (self.__size)**2
 
     def my_print(self):
+        '''
+        Prints square with #
+        '''
         if self.__size == 0:
             print("")
         else:
