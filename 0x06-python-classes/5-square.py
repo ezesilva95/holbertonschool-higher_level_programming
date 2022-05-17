@@ -1,24 +1,26 @@
 #!/usr/bin/python3
 '''
-class Square that defines a square by: (based on 4-square.py)
+Class Square that defines a square
 '''
 
 
 class Square:
     '''
-    class square
+    Square Class
     '''
 
     def __init__(self, size=0):
         '''
-        init a square
+        Init a square
 
         The size of a square is crucial for a square.
         One way to have the control is to keep it privately.
         You will see in next tasks how to get,
         update and validate the size value.
+
         '''
-        self.size = size
+
+        self.__size = size
 
     @property
     def size(self):
@@ -35,12 +37,12 @@ class Square:
         '''
 
         if type(value) is int:
-            if value < 0:
-                raise ValueError("size must be >= 0")
+            if value >= 0:
+                self.__size = value
             else:
-                raise TypeError("size must be an integer")
+                raise ValueError("size must be >= 0")
         else:
-            self.__size = value
+            raise TypeError("size must be an integer")
 
     def area(self):
         '''
