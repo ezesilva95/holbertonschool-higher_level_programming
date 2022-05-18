@@ -52,7 +52,7 @@ class Square:
         '''
         equal
         '''
-        return self.area == other.area
+        return self.area() == other.area()
 
     def _ne__(self, other):
         '''
