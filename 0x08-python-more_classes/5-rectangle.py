@@ -85,10 +85,9 @@ class Rectangle:
         str representation
         '''
         return (f"Rectangle({self.width:d}, {self.height:d})")
-    
+
     def __del__(self):
         '''
         delete instance class
         '''
         print("Bye rectangle...")
-
