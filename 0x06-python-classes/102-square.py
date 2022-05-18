@@ -52,7 +52,7 @@ class Square:
         '''
         equal
         '''
-        return self.area() == other.area()
+        return self.size == other.size
 
     def _ne__(self, other):
         '''
@@ -60,25 +60,25 @@ class Square:
         '''
         return self.size != other.size
 
-    def _ne__(self, other):
+    def _lt__(self, other):
         '''
         lesser than
         '''
         return self.size < other.size
 
-    def _ne__(self, other):
+    def _le__(self, other):
         '''
         lesser or equal than
         '''
         return self.size <= other.size
 
-    def _ne__(self, other):
+    def _ge__(self, other):
         '''
         greater or equal than
         '''
         return self.size >= other.size
 
-    def _ne__(self, other):
+    def _gt__(self, other):
         '''
         greater than
         '''
