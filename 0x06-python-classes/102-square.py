@@ -54,31 +54,31 @@ class Square:
         '''
         return self.size == other.size
 
-    def _ne__(self, other):
+    def __ne__(self, other):
         '''
         not equal
         '''
         return self.size != other.size
 
-    def _lt__(self, other):
+    def __lt__(self, other):
         '''
         lesser than
         '''
         return self.size < other.size
 
-    def _le__(self, other):
+    def __le__(self, other):
         '''
         lesser or equal than
         '''
         return self.size <= other.size
 
-    def _ge__(self, other):
+    def __ge__(self, other):
         '''
         greater or equal than
         '''
         return self.size >= other.size
 
-    def _gt__(self, other):
+    def __gt__(self, other):
         '''
         greater than
         '''
