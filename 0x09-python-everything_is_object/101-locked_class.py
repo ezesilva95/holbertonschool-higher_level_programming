@@ -3,10 +3,11 @@
 LockedClass with no class or object attribute
 '''
 
+
 class LockedClass:
     '''
-    locked classi
-    prevents the user from dynamically creating new instance attributes, 
+    locked class
+    prevents the user from dynamically creating new instance attributes,
     except if the new instance attribute is called first_name
     '''
 
