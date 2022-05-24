@@ -1,0 +1,26 @@
+------------------------
+Test method for Task 0
+------------------------
+
+#Testing successful cases
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+>>> say_my_name("Ezequiel", "Silva")
+My name is Ezequiel Silva
+
+>>> say_my_name("Ezequiel")
+My name is Ezequiel
+
+>>> say_my_name("Ezequiel", "")
+My name is Ezequiel
+
+#Testing not successful cases
+
+>>> say_my_name("Ezequiel", 1)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+>>> say_my_name(1, "Silva")
+Traceback (most recent call last):
+TypeError: first_name must be a string

@@ -2,7 +2,7 @@
 Test method for Task 0
 ------------------------
 
-#Testing succesfull cases
+#Testing successful cases
 
 >>> add_integer = __import__('0-add_integer').add_integer
 
@@ -24,7 +24,7 @@ Test method for Task 0
 >>> add_integer(3.5, 4.5)
 7
 
-#Testing not succesfull cases
+#Testing not successful cases
 
 >>> add_integer([21], 3)
 Traceback (most recent call last):

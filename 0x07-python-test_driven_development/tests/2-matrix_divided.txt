@@ -1,0 +1,34 @@
+------------------------
+Test method for Task 0
+------------------------
+
+#Testing successful cases
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+>>> matrix_divided([[5, 10, 15], [5, 5, 5]], 5)
+[[1.0, 2.0, 3.0], [1.0, 1.0, 1.0]]
+
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 2)
+[[0.5, 1.0, 1.5], [2.0, 2.5, 3]]
+
+
+#Testing not successful cases
+>>> matrix_divided([[5, 10], [5, 5, 5]], 5)
+Traceback (most recent call last):
+TypeError: Each row of the matrix must have the same size
+
+#Testing not successful cases
+>>> matrix_divided([[5, 10, "Hello"], [5, 5, 5]], 5)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+#Testing not successful cases
+>>> matrix_divided([[5, 10, 15], [5, 5, 5]], 0)
+Traceback (most recent call last):
+ZeroDivisionError: division by zero
+
+#Testing not successful cases
+>>> matrix_divided([[5, 10, 15], [5, 5, 5]], "a")
+Traceback (most recent call last):
+TypeError: div must be a number
