@@ -1,5 +1,5 @@
 ------------------------
-Test method for Task 0
+Test method for Task 2
 ------------------------
 
 #Testing successful cases
@@ -10,10 +10,10 @@ Test method for Task 0
 My name is Ezequiel Silva
 
 >>> say_my_name("Ezequiel")
-My name is Ezequiel
+My name is Ezequiel 
 
 >>> say_my_name("Ezequiel", "")
-My name is Ezequiel
+My name is Ezequiel 
 
 #Testing not successful cases
 

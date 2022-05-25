@@ -1,5 +1,5 @@
 ------------------------
-Test method for Task 0
+Test method for Task 4
 ------------------------
 
 #Testing successful cases
@@ -8,13 +8,13 @@ Test method for Task 0
 
 >>> text_indentation("What's my name you ask? Listen kid, my name is: The Great Ezequiel. And as you may have guessed, I am great.")
 What's my name you ask?
-<\n>
+<BLANKLINE>
 Listen kid, my name is:
-<\n>
+<BLANKLINE>
 The Great Ezequiel.
-<\n>
+<BLANKLINE>
 And as you may have guessed, I am great.
-<\n>
+<BLANKLINE>
 
 #Testing not successful cases
 

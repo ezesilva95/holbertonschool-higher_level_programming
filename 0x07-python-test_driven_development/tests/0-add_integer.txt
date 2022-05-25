@@ -30,7 +30,7 @@ Test method for Task 0
 Traceback (most recent call last):
 TypeError: a must be an integer
 
->>> add_integer(a, 3)
+>>> add_integer("a", 3)
 Traceback (most recent call last):
 TypeError: a must be an integer
 
