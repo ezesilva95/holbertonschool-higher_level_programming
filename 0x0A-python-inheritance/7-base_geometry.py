@@ -16,7 +16,7 @@ class BaseGeometry:
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-        ''' 
+        '''
         int validator
         '''
         if type(value) is not int:
