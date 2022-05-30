@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 '''
 12. My integer
-Write a class MyInt that inherits from int
+Write a class MyInt that inherits from int.
 '''
 
 
