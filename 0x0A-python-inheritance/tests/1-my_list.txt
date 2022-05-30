@@ -11,19 +11,12 @@ Tests integers:
 [23, 4, 13]
 >>> my_list.print_sorted()
 [4, 13, 23]
->>> print(my_list)
-[23, 4, 13]
-
->>> another_list = MyList()
->>> another_list.append(300)
->>> another_list.append(50)
->>> another_list.append(-1)
->>> print(another_list)
-[300, 50, -1]
->>> another_list.print_sorted()
-[-1, 50, 300]
->>> print(another_list)
-[300, 50, -1]
+>>> my_list.append(-1)
+[23, 4, 13, -1]
+>>> my_list.print_sorted()
+[-1, 4, 13, 23]
+>>>print(my_list)
+[23, 4, 13, -1]
 
 >>> l = MyList()
 >>> l.append(-300)
@@ -44,16 +37,6 @@ Test list with only an element:
 >>> print(solo)
 [-99999]
 
-Test with no elements:
->>> empty = MyList()
->>> print(empty)
-[]
->>> empty.print_sorted()
-[]
-
-test type, isinstance, issubclass:
->>> type(MyList())
-<class '1-my_list.MyList'>
-
->>> isinstance(MyList, object)
-True
+>>> list.print_sorted(1)
+Traceback (most recent call last):
+TypeError: print_sorted() takes 1 positional argument but 2 were given
