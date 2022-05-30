@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 '''
 4. Only sub class of
-function that returns True if the object is an instance of a class 
+function that returns True if the object is an instance of a class
 that inherited (directly or indirectly) from the specified class
 '''
 
