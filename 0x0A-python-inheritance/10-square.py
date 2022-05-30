@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 '''
 10. Square #1
-Write a class Square that inherits from Rectangle (9-rectangle.py):
+Write a class Square that inherits from Rectangle (9-rectangle.py)
 '''
 
 
