@@ -1,42 +1,30 @@
-#1. My list
+#test 1
 
 >>> MyList = __import__('1-my_list').MyList
 
-Tests integers:
->>> my_list = MyList()
->>> my_list.append(23)
->>> my_list.append(4)
->>> my_list.append(13)
->>> print(my_list)
-[23, 4, 13]
->>> my_list.print_sorted()
-[4, 13, 23]
->>> my_list.append(-1)
-[23, 4, 13, -1]
->>> my_list.print_sorted()
-[-1, 4, 13, 23]
->>>print(my_list)
-[23, 4, 13, -1]
+>>> list = MyList()
+>>> list.print_sorted()
+[]
 
->>> l = MyList()
->>> l.append(-300)
->>> l.append(50)
->>> l.append(-1)
->>> print(l)
-[-300, 50, -1]
->>> id(l) is not id(l.print_sorted())
-[-300, -1, 50]
-True
+>>> list.append(3)
+>>> list.append(2)
+>>> list.append(1)
+>>> print(list)
+[3, 2, 1]
 
-Test list with only an element:
->>> only1 = MyList()
->>> only1.append(425)
->>> print(only1)
->>> only1.print_sorted()
-[-99999]
->>> print(solo)
-[-99999]
+>>> list.print_sorted()
+[1, 2, 3]
+
+>>> list.append(-12)
+>>> list.append(-1)
+>>> print(list)
+[3, 2, 1, -12, -1]
+>>> list.print_sorted()
+[-12, -1, 1, 2, 3]
+>>> print(list)
+[3, 2, 1, -12, -1]
 
 >>> list.print_sorted(1)
 Traceback (most recent call last):
+...
 TypeError: print_sorted() takes 1 positional argument but 2 were given
