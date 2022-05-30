@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 '''
 3.Same class or inherit from
-function that returns True if the object is an instance of,
+function that returns True if the obj is an instance of,
 or if the obj is an instance of a class that inherited from the specified class
 '''
 
