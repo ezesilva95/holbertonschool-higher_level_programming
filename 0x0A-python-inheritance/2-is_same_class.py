@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-func that returns True if the obj is exactly an instance of the specified class
+func that return True if the obj is exactly an instance of the specified class
 '''
 
 
