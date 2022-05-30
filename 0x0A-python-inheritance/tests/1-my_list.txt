@@ -1,0 +1,25 @@
+#1. My list
+
+>>> MyList = __import__('1-my_list').MyList
+
+Tests integers:
+>>> my_list = MyList()
+>>> my_list.append(23)
+>>> my_list.append(4)
+>>> print(my_list)
+[23, 4]
+>>> my_list.print_sorted()
+[4, 23]
+
+Test list with only an element:
+>>> only1 = MyList()
+>>> only1.append(425)
+>>> print(only1)
+>>> only1.print_sorted()
+
+Test with no elements:
+>>> empty = MyList()
+>>> print(empty)
+[]
+>>> empty.print_sorted()
+[]
