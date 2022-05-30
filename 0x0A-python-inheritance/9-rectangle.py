@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 '''
 9. Full rectangle
-Write a class Rectangle that inherits from BaseGeometry
+Write a class Rectangle that inherits from BaseGeometry.
 '''
 
 
