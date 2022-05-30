@@ -6,23 +6,23 @@
 >>> list.print_sorted()
 []
 
+>>> list.append(5)
 >>> list.append(3)
 >>> list.append(2)
->>> list.append(1)
 >>> print(list)
-[3, 2, 1]
+[5, 3, 2]
 
 >>> list.print_sorted()
-[1, 2, 3]
+[2, 3, 5]
 
->>> list.append(-12)
+>>> list.append(-6)
 >>> list.append(-1)
 >>> print(list)
-[3, 2, 1, -12, -1]
+[5, 3, 2, -6, -1]
 >>> list.print_sorted()
-[-12, -1, 1, 2, 3]
+[-6, -1, 2, 3, 5]
 >>> print(list)
-[3, 2, 1, -12, -1]
+[5, 3, 2, -6, -1]
 
 >>> list.print_sorted(1)
 Traceback (most recent call last):
