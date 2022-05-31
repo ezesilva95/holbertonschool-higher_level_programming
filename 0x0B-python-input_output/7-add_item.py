@@ -11,7 +11,7 @@ f = "add_item.json"
 
 try:
     data = load_from_json_file(f)
-except:
+except FileNotFoundError:
     data = []
 
 save_to_json_file(data + argv[1:], f)
