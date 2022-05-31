@@ -1,17 +1,19 @@
 #!/usr/bin/python3
 '''
-7. Load, add, save
+Module 7. Load, add, save
 '''
 
-from sys import argv
-save_to_json_file = __import__('7-save_to_json_file').save_to_json_file
-load_from_json_file = __import__('8-load_from_json_file').load_from_json_file
 
-filename = "add_item.json"
+from sys import argv
+
+save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
+
+f = "add_item.json"
 
 try:
-    existing_content = load_from_json_file(filename)
+    data = load_from_json_file(f)
 except FileNotFoundError:
-    existing_content = []
+    load = []
 
-save_to_json_file(existing_content + argv[1:], filename)
+save_to_json_file(data + argv[1:], f)
