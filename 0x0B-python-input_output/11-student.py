@@ -25,7 +25,7 @@ class Student():
         else:
             dictionary = {}
             for at in attrs:
-                if at in self.__dict__:
+                if at in self.__dict__.keys():
                     dictionary[at] = self.__dict__[at]
             return dictionary
 
