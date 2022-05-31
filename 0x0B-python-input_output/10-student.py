@@ -18,7 +18,7 @@ class Student():
 
     def to_json(self, attrs=None):
         '''
-        retrieves a dictionary representation of a Student instance 
+        retrieves a dictionary representation of a Student instance
         '''
         if attrs is None:
             return self.__dict__
