@@ -18,7 +18,7 @@ class Student():
 
     def to_json(self, attrs=None):
         '''
-        etrieves a dictionary representation of a Student instance  
+        etrieves a dictionary representation of a Student instance
         '''
         if attrs is None:
             return self.__dict__
@@ -31,7 +31,7 @@ class Student():
 
     def reload_from_json(self, json):
         '''
-        replaces all attributes of the Student instance 
+        replaces all attributes of the Student instance
         '''
         for atr_name, atr_value in json.items():
             setattr(self, atr_name, atr_value)
