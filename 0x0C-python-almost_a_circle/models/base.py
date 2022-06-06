@@ -30,8 +30,7 @@ class Base():
         '''
         if list_dictionaries is not None:
             return json.dumps(list_dictionaries)
-        else:
-            list_dictionaries = "[]"
+        list_dictionaries = "[]"
 
     @classmethod
     def save_to_file(cls, list_objs):
@@ -53,8 +52,7 @@ class Base():
         '''
         if json_string is None or len(json_string) == 0:
             json_string = "[]"
-        else:
-            return json.loads(json_string)
+        return json.loads(json_string)
 
     @classmethod
     def create(cls, **dictionary):
