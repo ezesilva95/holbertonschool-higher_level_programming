@@ -44,29 +44,27 @@ class Square(Rectangle):
         '''
         public method def update(self, *args, **kwargs) that assigns attributes
         '''
-        if args is not None:
+        if args:
             for key, value in enumerate(args):
                 if key == 0:
                     self.id = value
                 elif key == 1:
-                    self.width = value
+                    self.size = value
                 elif key == 2:
-                    self.height = value
-                elif key == 3:
                     self.x = value
                 else:
                     self.y = value
         else:
             if "id" in kwargs:
-                self.id = args[0]
+                self.id = kwargs["id"]
             if "width" in kwargs:
-                self.width = args[1]
+                self.width = kwargs["width"]
             if "height" in kwargs:
-                self.height = args[2]
+                self.height = kwargs["height"]
             if "x" in kwargs:
-                self.x = args[3]
+                self.x = kwargs["x"]
             if "y" in kwargs:
-                self.y = args[4]
+                self.y = kwargs["y"]
 
     def to_dictionary(self):
         '''
