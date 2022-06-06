@@ -133,8 +133,8 @@ class Rectangle(Base):
         '''
         public method that assigns an argument to each attribute
         '''
-        if args is not None:
-            for key, value in enumerate(args):
+        if args:
+            for key, value in args.items():
                 if key == 0:
                     self.id = value
                 elif key == 1:
@@ -147,15 +147,15 @@ class Rectangle(Base):
                     self.y = value
         else:
             if "id" in kwargs:
-                self.id = args[0]
+                self.id = kwargs["id"]
             if "width" in kwargs:
-                self.width = args[1]
+                self.width = kwargs["width"]
             if "height" in kwargs:
-                self.height = args[2]
+                self.height = kwargs["height"]
             if "x" in kwargs:
-                self.x = args[3]
+                self.x = kwargs["x"]
             if "y" in kwargs:
-                self.y = args[4]
+                self.y = kwargs["y"]
 
     def to_dictionary(self):
         '''
