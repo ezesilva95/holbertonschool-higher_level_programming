@@ -134,7 +134,7 @@ class Rectangle(Base):
         public method that assigns an argument to each attribute
         '''
         if args:
-            for key, value in args.items():
+            for key, value in enumerate(args):
                 if key == 0:
                     self.id = value
                 elif key == 1:
