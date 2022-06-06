@@ -77,7 +77,7 @@ class Base():
         li = []
         try:
             with open(filename, "r") as f:
-                inst = cls.from_json_string(f.read())
+                inst = cls.from_json_string(read)
             for i in inst:
                 li.append(cls.create(**insti))
         except FileNotFoundError:
