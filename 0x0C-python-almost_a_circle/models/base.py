@@ -17,8 +17,6 @@ class Base():
         '''
         Initialize id
         '''
-
-
         if id is not None:
             self.id = id
         else:
@@ -82,6 +80,6 @@ class Base():
                 inst = cls.from_json_string(f.read())
             for i in inst:
                 li.append(cls.create(**insti))
-        except:
+        except FileNotFoundError:
             pass
         return li
