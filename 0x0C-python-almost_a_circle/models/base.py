@@ -51,10 +51,10 @@ class Base():
         '''
         returns the list of the JSON string representation json_string
         '''
-        if json_string is not None or len(json_string) != 0:
-            return json.loads(json_string)
-        else:
+        if json_string is None or len(json_string) == 0:
             json_string = "[]"
+        else:
+            return json.loads(json_string)
 
     @classmethod
     def create(cls, **dictionary):
