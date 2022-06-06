@@ -64,7 +64,7 @@ class Base():
         if cls.__name__ == "Square":
             dummy = cls(1)
         dummy.update(**dictionary)
-    
+
     @classmethod
     def load_from_file(cls):
         '''
@@ -73,7 +73,7 @@ class Base():
         filename = cls.__name__ + ".json"
         li = []
         try:
-            with open(filename, "r") as f:
+            with open(filename, "r", encodin="ustf-8") as f:
                 inst = cls.from_json_string(f.read())
             for i in inst:
                 li.append(cls.create(**i))
