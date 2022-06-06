@@ -109,13 +109,14 @@ class Rectangle(Base):
 
     def display(self):
         '''
-        print in stdout the Rectangle instance with 
+        print in stdout the Rectangle instance with
         the character # by taking care of x and y
         '''
-        print("\n" * self.__y +
-                "\n".join(" " * self.__x + "#" * self.__width
-                            for i in range(self.__height)))
-
+        y = self.__y
+        x = self.__x
+        w = self.__width
+        h = self.__height
+        print("\n" * y + "\n".join(" " * x + "#" * w for i in range(h)))
 
     def __str__(self):
         '''
@@ -132,7 +133,6 @@ class Rectangle(Base):
         '''
         public method that assigns an argument to each attribute
         '''
-        
         if args is not None:
             for key, value in args:
                 if key == 0:
