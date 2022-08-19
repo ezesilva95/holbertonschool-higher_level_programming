@@ -14,7 +14,8 @@ if __name__ == "__main__":
     else:
         letter = argv[1]
     url = 'http://0.0.0.0:5000/search_user'
-    req = requests.post(url, {"q": letter})
+    _q = {'q': letter}
+    req = requests.post(url, data=_q)
 
     try:
         dic = r.json()
