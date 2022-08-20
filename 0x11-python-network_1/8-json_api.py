@@ -3,7 +3,6 @@
 Write a Python script that takes in a letter and sends a POST request to
 http://0.0.0.0:5000/search_user with the letter as a parameter.
 """
-
 from sys import argv
 import requests
 
@@ -14,8 +13,8 @@ if __name__ == "__main__":
     else:
         letter = argv[1]
     url = 'http://0.0.0.0:5000/search_user'
-    _q = {'q': letter}
-    req = requests.post(url, data=_q)
+    payload = {'q': letter}
+    r = requests.post(url, data=payload)
 
     try:
         dic = r.json()
