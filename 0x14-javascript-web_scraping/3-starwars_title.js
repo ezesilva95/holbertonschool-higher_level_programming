@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 const axios = require('axios');
-const episode  = process.argv[2];
+const episode = process.argv[2];
 
 axios.get(`https://swapi-api.hbtn.io/api/films/${episode}`)
   .then(response => {
